@@ -1,4 +1,5 @@
 steps:
+- name: "ls ."
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'us-central1-docker.pkg.dev/cmntseam/cmntseam/seamimage', 'src/.' ]
 - name: 'gcr.io/cloud-builders/docker'
