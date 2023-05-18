@@ -1,7 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'us-central1-docker.pkg.dev/CmntSeam/cmntseam/seamimage', '.' ]
-  images: ['us-central1-docker.pkg.dev/CmntSeam/cmntseam/seamimage']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'us-central1-docker.pkg.dev/CmntSeam/cmntseam/seamimage', '.']
 - name: 'gcr.io/cloud-builders/docker'
@@ -18,3 +17,4 @@ steps:
   - '--platform'
   - 'managed'
   - '--allow-unauthenticated'
+images: ['us-central1-docker.pkg.dev/CmntSeam/cmntseam/seamimage']
